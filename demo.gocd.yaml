@@ -15,3 +15,7 @@ pipelines:
                     command: ls
                     arguments:
                       - .
+                - exec:
+                    command: cd gotham-todo
+                - exec:
+                    command: npm build
