@@ -12,8 +12,11 @@ pipelines:
             list:
               tasks:
                 - exec:
-                    command: ./gotham-todo/build.sh
+                    command: bash
+                    arguments: ./gotham-todo/build.sh
                 - exec:
-                    command: ./gotham-todo/apply-infrastructure.sh
+                    command: bash
+                    arguments: ./gotham-todo/apply-infrastructure.sh
                 - exec:
-                    command: ./gotham-todo/copy-static-files.sh
+                    command: bash
+                    arguments: ./gotham-todo/copy-static-files.sh
